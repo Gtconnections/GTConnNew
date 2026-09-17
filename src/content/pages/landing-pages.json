@@ -1,0 +1,132 @@
+{
+  "slug": "landing-pages",
+  "seo": {
+    "title": "Landing Pages & Conversion Strategies | GT Connections",
+    "description": "Great and creative landing pages. Convert all users who come in as potential customers.",
+    "keywords": [
+      "landing pages",
+      "conversion strategies",
+      "landing page design",
+      "lead generation",
+      "high converting landing page"
+    ],
+    "type": "website"
+  },
+  "hero": {
+    "eyebrow": "Landing Pages",
+    "title": "Great and creative landing pages",
+    "titleHighlight": "conversion strategies!",
+    "subtitle": "Better productivity expected. Get ready for something big. Convert all users who come in as potential customers.",
+    "ctas": [
+      {
+        "label": "Start Now!",
+        "href": "https://brief.gtconnections.com/web/",
+        "external": true
+      }
+    ]
+  },
+  "intro": {
+    "icon": "benefits",
+    "title": "Get multiple benefits with Landing Pages Conversion Strategies for your amazing project",
+    "text": "GT Connections has the qualified and specialized professional team to design and develop your landing page. This makes you get multiple benefits: get leads through subscribers, affiliate sales, contact you, sell a product or service, get followers and share your page on social networks, and video views.",
+    "cta": {
+      "label": "Let us show you the benefits",
+      "href": "https://brief.gtconnections.com/web/",
+      "external": true
+    }
+  },
+  "features": {
+    "items": [
+      {
+        "icon": "impression",
+        "title": "Make your first impression the right way",
+        "text": "There are some things that make a GT Connections landing page work: unique, relevant and adaptable designs that look great on every device."
+      },
+      {
+        "icon": "leads",
+        "title": "How to generate leads through valuable subscribers?",
+        "text": "It is quite easy! GT Connections pays attention to your own design. We work on your calls to action, we take care of your forms, and we add actual customers' testimonials."
+      },
+      {
+        "icon": "sell",
+        "title": "Sell your product or service",
+        "text": "How to sell them? Landing pages provide a delicate balance between promoting enough to encourage a sale and not so much that the potential customer feels pressure or bounces. That's the key."
+      },
+      {
+        "icon": "growth",
+        "title": "How to increase your business audience?",
+        "text": "Business landing pages help you build customer loyalty and increase profits by focusing on a specific short-term goal."
+      }
+    ]
+  },
+  "perks": {
+    "title": "Sign up and get even more",
+    "text": "In addition, if you sign up with us you will have:",
+    "items": [
+      "Free hosting",
+      "Discount domain registration",
+      "2 corporate emails",
+      "SSL security certificate"
+    ],
+    "ctas": [
+      {
+        "label": "Start Now!",
+        "href": "https://brief.gtconnections.com/web/",
+        "external": true
+      }
+    ]
+  },
+  "steps": {
+    "title": "It only takes 3 steps to get your project started",
+    "items": [
+      {
+        "title": "Gather your project information",
+        "text": "Gather all the information you can about your project. Clear information produces clear reachable goals."
+      },
+      {
+        "title": "Fill our landing page brief",
+        "text": "Fill out our brief in the most precise way. These questions have been proposed by our team; they are the direct input of your landing page."
+      },
+      {
+        "title": "Get contacted by our team",
+        "text": "After completing our brief, our team will get in touch to start the development of the project."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "What are landing pages?",
+        "a": "A landing page is a website designed and oriented to convert the visitor into a potential customer."
+      },
+      {
+        "q": "Can I really get a conversion with this landing pages strategy?",
+        "a": "Of course. Due to its mission, we place special emphasis on making the page attractive and appealing, with a call to action that is really effective."
+      },
+      {
+        "q": "How does a landing page work?",
+        "a": "The operation of a landing page, applied in an optimal way, is a strategy that has proven its effectiveness for years."
+      },
+      {
+        "q": "What are landing pages for?",
+        "a": "A landing page serves to turn a user into a potential customer — also known as a lead."
+      }
+    ]
+  },
+  "callout": {
+    "title": "Start your project the right way with the right landing page",
+    "text": "If you already have all the necessary information, fill out our brief to contact us so we can start developing your landing page.",
+    "ctas": [
+      {
+        "label": "Start Now!",
+        "href": "https://brief.gtconnections.com/web/",
+        "external": true
+      },
+      {
+        "label": "Talk to us",
+        "href": "/contact-us"
+      }
+    ]
+  }
+}

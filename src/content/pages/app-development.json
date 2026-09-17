@@ -1,0 +1,63 @@
+{
+  "slug": "app-development",
+  "seo": {
+    "title": "Mobile App Development | GT Connections",
+    "description": "Make your app easily with us. Connect with us and we connect with your customers.",
+    "keywords": [
+      "mobile app development",
+      "iOS app development",
+      "Android app development",
+      "custom apps",
+      "cross-platform apps"
+    ],
+    "type": "website"
+  },
+  "hero": {
+    "eyebrow": "Mobile App Development",
+    "title": "Make your app easily with us",
+    "subtitle": "Connect with us and we connect with your customers.",
+    "ctas": [
+      {
+        "label": "Start Now",
+        "href": "/contact-us"
+      }
+    ]
+  },
+  "cards": {
+    "title": "Why Choose Us?",
+    "items": [
+      {
+        "title": "Our Designs",
+        "text": "At GT Connections, we work with the best technologies to develop your projects, getting the most efficient and lasting applications as a result."
+      },
+      {
+        "title": "Group of Professionals",
+        "text": "Our group of professionals have fresh ideas and knowledge in Android and iOS development to carry out your projects. We can make it POSSIBLE."
+      },
+      {
+        "title": "APP List",
+        "text": "We give our clients their app ready to work on any platform. We are characterized by excellent design, usability, technology and above all security."
+      }
+    ]
+  },
+  "reasons": {
+    "title": "5 reasons why you should CHOOSE us",
+    "items": [
+      "Our experience and knowledge say it all.",
+      "We comply with our clients' projects.",
+      "We use the most advanced technology.",
+      "A group of professional engineers develop innovative applications.",
+      "We manage to reach your target audience through our applications."
+    ]
+  },
+  "callout": {
+    "title": "What do we offer you?",
+    "text": "Professional solutions that fit any device, quick and quality answers, and high-level technology to meet your demands.",
+    "ctas": [
+      {
+        "label": "Get Started",
+        "href": "/contact-us"
+      }
+    ]
+  }
+}

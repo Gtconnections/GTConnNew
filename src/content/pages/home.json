@@ -1,0 +1,217 @@
+{
+  "slug": "home",
+  "seo": {
+    "title": "GT Connections | Los mejores servicios digitales",
+    "description": "Hosting, dominios, desarrollo web y de apps. You are in the ideal place to start your Digital Business.",
+    "keywords": [
+      "GT Connections",
+      "digital services",
+      "web development",
+      "hosting",
+      "domain registration",
+      "GoDaddy reseller",
+      "mobile apps",
+      "landing pages",
+      "Miami web design"
+    ],
+    "type": "website"
+  },
+  "hero": {
+    "eyebrow": "Hosting · Domains · Web & Apps",
+    "title": "You are in the ideal place to start your",
+    "titleHighlight": "Digital Business.",
+    "subtitle": "Start searching the domain name from your website.",
+    "showDomainSearch": true,
+    "kinetic": true,
+    "trust": {
+      "rating": 5,
+      "text": "Trusted by growing businesses across the Americas"
+    }
+  },
+  "logos": {
+    "title": "Projects we've built for our clients",
+    "items": [
+      "CuponTours",
+      "Magnetic Investments",
+      "Glasses Supply"
+    ]
+  },
+  "services": {
+    "title": "Everything you need in a single site",
+    "subtitle": "If you have a vision of your website hosting services, GT Connections can make it into reality.",
+    "items": [
+      {
+        "icon": "web",
+        "title": "Web Development",
+        "text": "Functional, beautiful websites available online for millions of users, built to work and to convert.",
+        "href": "/web-development",
+        "highlight": true
+      },
+      {
+        "icon": "ecommerce",
+        "title": "E-commerce",
+        "text": "Online stores to showcase your products and services, compatible with all mobile devices.",
+        "href": "/web-development"
+      },
+      {
+        "icon": "app",
+        "title": "Mobile Apps",
+        "text": "Android and iOS apps with excellent design, usability and security — ready to work on any platform.",
+        "href": "/app-development"
+      },
+      {
+        "icon": "landing",
+        "title": "Landing Pages",
+        "text": "Conversion-focused pages that turn visitors into customers, with clear calls to action.",
+        "href": "/landing-pages"
+      },
+      {
+        "icon": "hosting",
+        "title": "Hosting & Backups",
+        "text": "Easy & secure hosting with full backups. Your security is a top priority.",
+        "href": "https://shop.gtconnections.com/products/cpanel",
+        "external": true
+      },
+      {
+        "icon": "domain",
+        "title": "Domains",
+        "text": "Find and register the perfect domain for your business, powered by our GoDaddy reseller program.",
+        "href": "/reseller-program"
+      }
+    ]
+  },
+  "stats": {
+    "items": [
+      {
+        "to": 24,
+        "suffix": "/7",
+        "label": "Support"
+      },
+      {
+        "to": 100,
+        "suffix": "%",
+        "label": "Secure backups"
+      },
+      {
+        "to": 4,
+        "suffix": "-step",
+        "label": "Delivery process"
+      },
+      {
+        "value": "GoDaddy",
+        "label": "Reseller partner"
+      }
+    ]
+  },
+  "steps": {
+    "title": "What's our process",
+    "variant": "cards",
+    "items": [
+      {
+        "title": "Discover",
+        "text": "GT Connections will allow you blueprints of the conceptions you have in mind so your goals can be accurately routed towards their proper achieving.",
+        "benefits": [
+          "Goals & requirements workshop",
+          "Blueprint & sitemap",
+          "Clear project roadmap"
+        ]
+      },
+      {
+        "title": "Design",
+        "text": "We take UI/UX as one of our main goals to be achieved since they will grant success to your ideas. Our top of the line designers will materialize your dreams.",
+        "benefits": [
+          "UI/UX wireframes",
+          "Brand-aligned visuals",
+          "Interactive prototype"
+        ]
+      },
+      {
+        "title": "Develop",
+        "text": "By applying our state-of-the-art technologies and processes we will get to the goal at lightning speed. Try us!",
+        "benefits": [
+          "Modern, fast tech stack",
+          "Responsive & SEO-ready",
+          "Rigorous testing"
+        ]
+      },
+      {
+        "title": "Deliver",
+        "text": "Final outcome will be flawless. You will be given an outstanding result you can be proud of. Congrats, you will be elite class with GT Connections!",
+        "benefits": [
+          "Launch & handover",
+          "Training & documentation",
+          "Ongoing support"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What our clients say",
+    "subtitle": "PLACEHOLDER — replace with real client reviews before publishing.",
+    "items": [
+      {
+        "name": "Cliente Ejemplo",
+        "role": "Founder",
+        "location": "Miami, FL",
+        "rating": 5,
+        "review": "Exceptional service and attention to detail. Everything was handled professionally from start to finish. Highly recommended!"
+      },
+      {
+        "name": "Cliente Ejemplo",
+        "role": "Marketing Lead",
+        "location": "Caracas, VE",
+        "rating": 5,
+        "review": "The team delivered a fast, beautiful website and made the whole process smooth. Our online presence improved a lot."
+      },
+      {
+        "name": "Cliente Ejemplo",
+        "role": "Store Owner",
+        "location": "Bogotá, CO",
+        "rating": 5,
+        "review": "Great hosting and support. Migrations, backups and domains — all taken care of. We can focus on our business."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Do you register domains?",
+        "a": "Yes. Through our GoDaddy reseller program you can search and register the perfect domain right from our site, including hosting, email and SSL."
+      },
+      {
+        "q": "Do you provide hosting and backups?",
+        "a": "We offer easy and secure hosting and perform full backups of your website. Your security is a top priority."
+      },
+      {
+        "q": "How does a web project work?",
+        "a": "We follow a 4-step process — Discover, Design, Develop and Deliver — so your goals are clear and the final result is flawless."
+      },
+      {
+        "q": "Can I resell domains and hosting?",
+        "a": "Yes. Our reseller program lets you sell domains, hosting, email, website builder, SSL and more, with your own branding and prices."
+      },
+      {
+        "q": "How much does a website cost?",
+        "a": "It depends on your needs. Use our cost calculator to get an approximate budget, or contact us for a tailored quote."
+      }
+    ]
+  },
+  "callout": {
+    "early": true,
+    "title": "Calculate the cost to create your website easily",
+    "text": "Get an approximate budget for the creation of your website.",
+    "ctas": [
+      {
+        "label": "Calculate Cost",
+        "href": "https://brief.gtconnections.com/web/",
+        "external": true
+      },
+      {
+        "label": "Design your website",
+        "href": "https://shop.gtconnections.com/products/website-builder",
+        "external": true
+      }
+    ]
+  }
+}

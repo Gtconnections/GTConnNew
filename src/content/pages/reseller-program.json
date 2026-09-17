@@ -1,0 +1,124 @@
+{
+  "slug": "reseller-program",
+  "seo": {
+    "title": "Reseller Program | GT Connections",
+    "description": "Your business, our products. Everything you need to sell domains, hosting, email, website builder and more.",
+    "keywords": [
+      "domain reseller program",
+      "hosting reseller",
+      "white label reseller",
+      "GoDaddy reseller",
+      "sell domains and hosting"
+    ],
+    "type": "website"
+  },
+  "hero": {
+    "eyebrow": "Partner Program",
+    "title": "Your business, our products.",
+    "subtitle": "Everything you need to sell domains, hosting, email, website builder and more, right from your own website.",
+    "ctas": [
+      {
+        "label": "View Pricing",
+        "href": "#pricing"
+      },
+      {
+        "label": "Start Now",
+        "href": "https://www.secureserver.net/reseller-plans?pl_id=531354",
+        "external": true
+      }
+    ]
+  },
+  "cards": {
+    "title": "Why resell with us",
+    "items": [
+      {
+        "title": "Branding",
+        "text": "Build your online storefront — create a storefront that looks like your business."
+      },
+      {
+        "title": "Set your own prices",
+        "text": "Don't just get a commission; set your own margins and price products your way."
+      },
+      {
+        "title": "We handle payments",
+        "text": "There's no need to establish your own merchant account."
+      },
+      {
+        "title": "Support",
+        "text": "We have a team dedicated exclusively to helping our resellers succeed."
+      },
+      {
+        "title": "IT professionals, MSPs & VARs welcome",
+        "text": "A program aligned with your business model."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "plans": [
+      {
+        "name": "Basic Reseller",
+        "price": "$149.99",
+        "period": "/year",
+        "audience": "For up to 25 customers",
+        "features": [
+          "Standard buy rates, up to 20% off retail",
+          "White-label eCommerce storefront",
+          "Credit card processing",
+          "24/7 support",
+          "Product promotions",
+          "SSL certificate"
+        ],
+        "cta": {
+          "label": "Start Now",
+          "href": "https://www.secureserver.net/reseller-plans?pl_id=531354",
+          "external": true
+        }
+      },
+      {
+        "name": "Pro Reseller",
+        "price": "$319.99",
+        "period": "/year",
+        "audience": "For unlimited customers",
+        "highlighted": true,
+        "features": [
+          "Standard buy rates, up to 40% off retail",
+          "White-label eCommerce storefront",
+          "Credit card processing",
+          "24/7 support",
+          "Product promotions",
+          "SSL certificate"
+        ],
+        "cta": {
+          "label": "Start Now",
+          "href": "https://www.secureserver.net/reseller-plans?pl_id=531354",
+          "external": true
+        }
+      }
+    ]
+  },
+  "productList": {
+    "title": "Products you can resell",
+    "items": [
+      "Domain Names",
+      "Web Hosting",
+      "Business-Grade Email",
+      "Website Builder",
+      "SSL Certificates",
+      "Servers",
+      "Website Security (powered by Sucuri)",
+      "Managed WordPress"
+    ]
+  },
+  "callout": {
+    "title": "Talk to our reseller experts",
+    "text": "Call our reseller experts at +1 (305) 714-2227.",
+    "ctas": [
+      {
+        "label": "Estimate My Profit",
+        "href": "https://www.secureserver.net/reseller-plans?pl_id=531354",
+        "external": true
+      }
+    ]
+  }
+}

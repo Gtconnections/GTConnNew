@@ -1,0 +1,73 @@
+{
+  "slug": "influencers",
+  "seo": {
+    "title": "Influencers & Social Media Marketing | GT Connections",
+    "description": "Social media marketing campaigns to increase your presence. 100% organic, no bots.",
+    "keywords": [
+      "influencer marketing",
+      "influencer campaigns",
+      "social media marketing",
+      "brand collaborations"
+    ],
+    "type": "website"
+  },
+  "hero": {
+    "eyebrow": "Marketing Online",
+    "title": "GT Connections offers you social media marketing campaigns to increase your presence",
+    "subtitle": "Our process is 100% organic — we do not use bots. We are real! We get you visibility and better positions on the timeline.",
+    "ctas": [
+      {
+        "label": "Contact Us",
+        "href": "/contact-us"
+      }
+    ]
+  },
+  "cards": {
+    "title": "Our value proposition",
+    "items": [
+      {
+        "title": "Target audience",
+        "text": "We identify your target audience group."
+      },
+      {
+        "title": "Financial plan",
+        "text": "We build your financial plan for the campaign."
+      },
+      {
+        "title": "KPIs",
+        "text": "We develop key performance indicators (KPI) to measure results."
+      }
+    ]
+  },
+  "steps": {
+    "title": "You need a promotion — here it is in 4 simple steps",
+    "items": [
+      {
+        "title": "1. Contact Us",
+        "text": "Contact our team so we can help you meet your goals."
+      },
+      {
+        "title": "2. Inform Us",
+        "text": "Give us information about the product or service you want to promote."
+      },
+      {
+        "title": "3. We contact You",
+        "text": "We will put you in touch with the influencer you think is most suitable."
+      },
+      {
+        "title": "4. Get followers",
+        "text": "Get greater reach through our networks and gain more than 100,000 followers."
+      }
+    ]
+  },
+  "callout": {
+    "title": "Let's grow your social presence",
+    "text": "Call us at +1 (305) 563-2299 or write us on Instagram @gtconnections.",
+    "ctas": [
+      {
+        "label": "Start a campaign",
+        "href": "/contact-us"
+      }
+    ]
+  }
+}

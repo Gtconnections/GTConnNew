@@ -1,0 +1,51 @@
+{
+  "slug": "about-us",
+  "seo": {
+    "title": "About Us | GT Connections",
+    "description": "We are waiting and offer help! Connecting employers with trained talent.",
+    "keywords": [
+      "about GT Connections",
+      "digital agency",
+      "web development team",
+      "hosting company Miami"
+    ]
+  },
+  "hero": {
+    "eyebrow": "About Us",
+    "title": "We are waiting and offer help!",
+    "subtitle": "We will be a leading company whose objective is to hire people from the third-world, and eventually train them in order to enable the assistance to people within the first-world."
+  },
+  "intro": {
+    "text": "The employer obtains the actual benefit of an aid for his business in progress involving a monthly low investment, saving time when delegating."
+  },
+  "cards": {
+    "title": "How we work",
+    "items": [
+      {
+        "title": "Staff Development",
+        "text": "Training sessions every 15 days in order to track each employed person's performance."
+      },
+      {
+        "title": "A dedicated facilitator",
+        "text": "One person will be facilitating your business development, connecting your project with trained talent."
+      }
+    ]
+  },
+  "mission": {
+    "title": "Mission",
+    "text": "Build up an advancement perspective and opportunity in hired people's life. Furthermore, we seek that the entrepreneur experience an effective and low cost development in longer measure."
+  },
+  "vision": {
+    "title": "Vision",
+    "text": "Generate jobs in third-world countries and benefit entrepreneurs from first-world countries with the support of one person who will be facilitating your business development."
+  },
+  "callout": {
+    "title": "Let's build your project together",
+    "ctas": [
+      {
+        "label": "Contact Us",
+        "href": "/contact-us"
+      }
+    ]
+  }
+}

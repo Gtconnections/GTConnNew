@@ -1,0 +1,221 @@
+{
+  "brand": {
+    "name": "GT Connections",
+    "logoText": "GT Connections",
+    "tagline": "Los mejores servicios digitales"
+  },
+  "contact": {
+    "phones": [
+      "+1 (305) 714-2227",
+      "+1 (305) 563-2299"
+    ],
+    "email": "info@gtconnections.com"
+  },
+  "socials": {
+    "facebook": "https://www.facebook.com/gtconnections/",
+    "instagram": "https://www.instagram.com/gtconnections/"
+  },
+  "external": {
+    "onlineServices": "https://www.secureserver.net?pl_id=531354",
+    "shopCpanel": "https://shop.gtconnections.com/products/cpanel",
+    "shopWebsiteBuilder": "https://shop.gtconnections.com/products/website-builder",
+    "brief": "https://brief.gtconnections.com/web/",
+    "resellerSignup": "https://www.secureserver.net/reseller-plans?pl_id=531354"
+  },
+  "godaddy": {
+    "plid": "531354",
+    "domainSearch": {
+      "action": "https://www.secureserver.net/products/domain-registration/find/",
+      "method": "get",
+      "queryParam": "domainToCheck",
+      "placeholder": "Find your perfect domain name",
+      "buttonLabel": "Search",
+      "hiddenFields": {
+        "plid": "531354",
+        "itc": "slp_rstore"
+      }
+    }
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About us",
+      "href": "/about-us"
+    },
+    {
+      "label": "Websites & Apps",
+      "children": [
+        {
+          "label": "Landing Pages",
+          "href": "/landing-pages"
+        },
+        {
+          "label": "Web development",
+          "href": "/web-development"
+        },
+        {
+          "label": "Mobile App Development",
+          "href": "/app-development"
+        },
+        {
+          "label": "Influencers",
+          "href": "/influencers"
+        }
+      ]
+    },
+    {
+      "label": "Online Services",
+      "href": "https://www.secureserver.net?pl_id=531354",
+      "external": true
+    },
+    {
+      "label": "Reseller Program",
+      "href": "/reseller-program"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact-us"
+    }
+  ],
+  "footer": {
+    "columns": [
+      {
+        "title": "About GT Connections",
+        "links": [
+          {
+            "label": "Contact Us",
+            "href": "/contact-us"
+          },
+          {
+            "label": "About Us",
+            "href": "/about-us"
+          },
+          {
+            "label": "News",
+            "href": "/news"
+          },
+          {
+            "label": "Careers",
+            "href": "/contact-us"
+          },
+          {
+            "label": "Legal",
+            "href": "/contact-us"
+          }
+        ]
+      },
+      {
+        "title": "Services",
+        "links": [
+          {
+            "label": "Web Development",
+            "href": "/web-development"
+          },
+          {
+            "label": "Landing Pages",
+            "href": "/landing-pages"
+          },
+          {
+            "label": "Mobile Apps",
+            "href": "/app-development"
+          },
+          {
+            "label": "Influencers",
+            "href": "/influencers"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {
+            "label": "Product Support",
+            "href": "https://www.secureserver.net/help?pl_id=531354",
+            "external": true
+          },
+          {
+            "label": "Report Abuse",
+            "href": "https://www.secureserver.net/whois?pl_id=531354",
+            "external": true
+          },
+          {
+            "label": "Help",
+            "href": "https://www.secureserver.net/help?pl_id=531354",
+            "external": true
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          {
+            "label": "WHOIS",
+            "href": "https://www.secureserver.net/whois?pl_id=531354",
+            "external": true
+          },
+          {
+            "label": "Reseller Program",
+            "href": "/reseller-program"
+          },
+          {
+            "label": "Site Map",
+            "href": "/"
+          }
+        ]
+      },
+      {
+        "title": "Shopping",
+        "links": [
+          {
+            "label": "Domains",
+            "href": "https://www.secureserver.net?pl_id=531354",
+            "external": true
+          },
+          {
+            "label": "Websites",
+            "href": "https://shop.gtconnections.com/products/website-builder",
+            "external": true
+          },
+          {
+            "label": "WordPress",
+            "href": "https://shop.gtconnections.com/products/cpanel",
+            "external": true
+          },
+          {
+            "label": "Hosting",
+            "href": "https://shop.gtconnections.com/products/cpanel",
+            "external": true
+          },
+          {
+            "label": "Web Security",
+            "href": "https://www.secureserver.net?pl_id=531354",
+            "external": true
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "url": "https://gtconnections.com",
+    "siteName": "GT Connections",
+    "locale": "en_US",
+    "description": "GT Connections is your digital business partner: web & app development, landing pages, secure hosting & backups, and a GoDaddy domain reseller program across the Americas.",
+    "ogImage": "/og.png",
+    "twitter": "",
+    "foundingDate": "2018",
+    "areaServed": [
+      "US",
+      "VE",
+      "CO",
+      "Americas"
+    ]
+  },
+  "address": {
+    "addressLocality": "Miami",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  }
+}

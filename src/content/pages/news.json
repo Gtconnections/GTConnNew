@@ -1,0 +1,31 @@
+{
+  "slug": "news",
+  "seo": {
+    "title": "News | GT Connections",
+    "description": "Make the most of your website and your online business.",
+    "keywords": [
+      "GT Connections news",
+      "digital marketing news",
+      "web development updates"
+    ],
+    "type": "website"
+  },
+  "hero": {
+    "eyebrow": "News",
+    "title": "News",
+    "subtitle": "Make the most of your website and your online business."
+  },
+  "intro": {
+    "text": "Check our GT Connections News to keep up to date with our tips and detailed articles on web hosting, SEO, and news from Central and South America."
+  },
+  "callout": {
+    "title": "Subscribe to our channel",
+    "text": "Subscribe and you will receive our articles and news daily.",
+    "ctas": [
+      {
+        "label": "Contact Us",
+        "href": "/contact-us"
+      }
+    ]
+  }
+}

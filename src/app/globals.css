@@ -1,0 +1,503 @@
+@import "tailwindcss";
+
+/*
+  GT Connections — design tokens
+  Paleta base neutra + azul de marca. Refinaremos sección a sección con 21st.dev.
+*/
+@theme {
+  --color-brand-50: #eef6ff;
+  --color-brand-100: #d9ebff;
+  --color-brand-200: #bcdcff;
+  --color-brand-300: #8ec6ff;
+  --color-brand-400: #59a6ff;
+  --color-brand-500: #3385fc;
+  --color-brand-600: #1d66f1;
+  --color-brand-700: #1651dd;
+  --color-brand-800: #1843b3;
+  --color-brand-900: #193c8d;
+  --color-brand-950: #142657;
+
+  --color-ink-900: #0b1220;
+  --color-ink-700: #26324a;
+  --color-ink-500: #5a6a86;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0b1220;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  Clases de composición reutilizables.
+  En Tailwind v4 @apply solo admite utilidades reales, por eso cada variante de
+  botón repite las utilidades base en lugar de encadenar clases propias.
+*/
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+  .eyebrow {
+    @apply text-sm font-semibold uppercase tracking-wide text-brand-600;
+  }
+  .section {
+    @apply py-14 sm:py-16;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition-colors;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition-colors bg-brand-600 text-white hover:bg-brand-700;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition-colors border border-brand-600 text-brand-700 hover:bg-brand-50;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-ink-700 transition-colors hover:text-brand-700;
+  }
+}
+
+/* Animación de entrada (CSS puro — siempre termina visible) */
+@keyframes gt-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.gt-rise {
+  animation: gt-rise 0.5s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gt-rise {
+    animation: none;
+  }
+}
+
+/* Texto con degradado animado (fluye) */
+@keyframes gt-text-shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.gt-text-gradient {
+  background-image: linear-gradient(
+    90deg,
+    #1d66f1,
+    #59a6ff,
+    #8b5cf6,
+    #1d66f1
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gt-text-shimmer 4s linear infinite;
+}
+
+/* Punto pulsante del badge */
+@keyframes gt-ping {
+  75%,
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+.gt-ping {
+  animation: gt-ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gt-text-gradient,
+  .gt-ping {
+    animation: none;
+  }
+}
+
+/* Ilustraciones que se dibujan solas — en bucle continuo (siempre en movimiento) */
+@keyframes gt-stroke-loop {
+  0% {
+    stroke-dashoffset: 1;
+    opacity: 0.25;
+  }
+  18% {
+    opacity: 1;
+  }
+  45% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  75% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: -1;
+    opacity: 0.25;
+  }
+}
+.gt-art [data-draw] {
+  stroke-dasharray: 1;
+  animation: gt-stroke-loop 5.5s ease-in-out infinite;
+  animation-delay: calc(var(--i, 0) * -0.55s); /* negativo: cada trazo en distinta fase */
+}
+/* Al pasar el mouse por la tarjeta, el trazo fluye más rápido */
+.group:hover .gt-art [data-draw] {
+  animation-duration: 2.6s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-art [data-draw] {
+    animation: none;
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+/* Ilustraciones en 3D con vaivén constante (se inclinan mientras se dibujan) */
+@keyframes gt-art3d {
+  0% {
+    transform: rotateX(9deg) rotateY(-14deg) translateZ(0);
+  }
+  50% {
+    transform: rotateX(-7deg) rotateY(14deg) translateZ(18px);
+  }
+  100% {
+    transform: rotateX(9deg) rotateY(-14deg) translateZ(0);
+  }
+}
+.gt-art-3d {
+  transform-style: preserve-3d;
+  animation: gt-art3d 7s ease-in-out infinite;
+  will-change: transform;
+}
+/* Al pasar el mouse, el giro 3D se hace un poco más marcado y ágil */
+.group:hover .gt-art-3d {
+  animation-duration: 4.5s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-art-3d {
+    animation: none;
+  }
+}
+
+/* Dos LED que salen de esquinas opuestas (abajo-izquierda y arriba-derecha),
+   se encuentran en la esquina superior izquierda y regresan (ping-pong). */
+@keyframes gt-led-left {
+  0% {
+    top: 100%;
+  } /* abajo-izquierda */
+  50% {
+    top: -18%;
+  } /* sube al encuentro (arriba-izquierda) */
+  100% {
+    top: 100%;
+  } /* regresa abajo */
+}
+@keyframes gt-led-top {
+  0% {
+    left: 100%;
+  } /* arriba-derecha */
+  50% {
+    left: -18%;
+  } /* va al encuentro (arriba-izquierda) */
+  100% {
+    left: 100%;
+  } /* regresa a la derecha */
+}
+.gt-led-left {
+  animation: gt-led-left 6s ease-in-out infinite;
+  animation-delay: var(--d, 0s);
+}
+.gt-led-top {
+  animation: gt-led-top 6s ease-in-out infinite;
+  animation-delay: var(--d, 0s);
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-led-left,
+  .gt-led-top {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+/* Proceso: punto luminoso que recorre la línea */
+@keyframes gt-line-dot {
+  0% {
+    left: 12.5%;
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    left: 87.5%;
+    opacity: 0;
+  }
+}
+.gt-line-dot {
+  animation: gt-line-dot 3.6s ease-in-out infinite;
+}
+/* Proceso: pulso suave de los círculos numerados */
+@keyframes gt-ring {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+}
+.gt-ring {
+  animation: gt-ring 2.4s ease-in-out infinite;
+  animation-delay: var(--rd, 0s);
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-line-dot,
+  .gt-ring {
+    animation: none;
+  }
+}
+
+/* Stats: barras tipo ecualizador (fondo translúcido en movimiento) */
+@keyframes gt-bar {
+  0%,
+  100% {
+    transform: scaleY(0.22);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+.gt-bar {
+  transform-origin: bottom;
+  animation: gt-bar var(--dur, 2.4s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-bar {
+    animation: none;
+    transform: scaleY(0.5);
+  }
+}
+
+/* Stats: barrido de brillo constante + pop al refrescar los números */
+@keyframes gt-sheen {
+  0% {
+    transform: translateX(-130%) skewX(-18deg);
+  }
+  100% {
+    transform: translateX(130%) skewX(-18deg);
+  }
+}
+.gt-sheen {
+  animation: gt-sheen 4.5s ease-in-out infinite;
+}
+@keyframes gt-count-pop {
+  0% {
+    opacity: 0.35;
+    transform: translateY(8px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.gt-count-pop {
+  animation: gt-count-pop 0.7s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-sheen,
+  .gt-count-pop {
+    animation: none;
+  }
+}
+
+/* Botón CTA con pulso (llamado a la acción) */
+@keyframes gt-cta-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(29, 102, 241, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(29, 102, 241, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 102, 241, 0);
+  }
+}
+.gt-cta-pulse {
+  animation: gt-cta-pulse 2s ease-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-cta-pulse {
+    animation: none;
+  }
+}
+
+/* Icono de marca de fondo (giro del hero): vaivén lateral con inclinación 3D.
+   CSS puro, siempre en movimiento; se detiene con prefers-reduced-motion. */
+@keyframes gt-sway3d {
+  0% {
+    /* lateral izquierdo, alejado (pequeño) */
+    transform: perspective(1200px) translateX(-38%) translateZ(-360px) rotateY(-28deg) rotateZ(-3deg);
+  }
+  25% {
+    /* al centro, acercándose (grande) */
+    transform: perspective(1200px) translateX(0%) translateZ(240px) rotateY(0deg) rotateZ(0deg);
+  }
+  50% {
+    /* lateral derecho, alejado (pequeño) */
+    transform: perspective(1200px) translateX(38%) translateZ(-360px) rotateY(28deg) rotateZ(3deg);
+  }
+  75% {
+    /* de vuelta al centro, acercándose (grande) */
+    transform: perspective(1200px) translateX(0%) translateZ(240px) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(1200px) translateX(-38%) translateZ(-360px) rotateY(-28deg) rotateZ(-3deg);
+  }
+}
+.gt-sway3d {
+  transform-origin: center;
+  animation: gt-sway3d 20s ease-in-out infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-sway3d {
+    animation: none;
+  }
+}
+
+/* CTA destacado: título que se revela letra por letra (CSS puro, termina visible) */
+@keyframes gt-letter-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.6em) rotate(6deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.gt-letter {
+  display: inline-block;
+  animation: gt-letter-in 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: calc(var(--i, 0) * 0.03s);
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-letter {
+    animation: none;
+  }
+}
+
+/* CTA destacado: líneas SVG de fondo que fluyen (CSS puro; el trazo es visible) */
+@keyframes gt-flow {
+  to {
+    stroke-dashoffset: -1;
+  }
+}
+.gt-flow-path {
+  animation: gt-flow var(--dur, 12s) linear infinite;
+  animation-delay: var(--fd, 0s);
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-flow-path {
+    animation: none;
+  }
+}
+
+/* Láser que barre la franja hacia la derecha */
+@keyframes gt-laser-beam {
+  0% {
+    left: -6%;
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  94% {
+    opacity: 1;
+  }
+  100% {
+    left: 106%;
+    opacity: 0;
+  }
+}
+@keyframes gt-laser-mask {
+  from {
+    -webkit-mask-position: -35% center;
+    mask-position: -35% center;
+  }
+  to {
+    -webkit-mask-position: 135% center;
+    mask-position: 135% center;
+  }
+}
+.gt-laser-beam {
+  animation: gt-laser-beam 4s linear infinite;
+}
+.gt-laser-reveal {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 42%, #000 58%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 42%, #000 58%, transparent);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 24% 100%;
+  mask-size: 24% 100%;
+  animation: gt-laser-mask 4s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gt-laser-beam {
+    display: none;
+  }
+  .gt-laser-reveal {
+    display: none;
+  }
+}
+
+/* Marquee (franja de clientes) */
+@keyframes gt-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.gt-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: gt-marquee 32s linear infinite;
+}
+
+.gt-marquee:hover .gt-marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gt-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

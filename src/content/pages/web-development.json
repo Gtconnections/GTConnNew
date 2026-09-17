@@ -1,0 +1,75 @@
+{
+  "slug": "web-development",
+  "seo": {
+    "title": "Web Development | GT Connections",
+    "description": "If you have a vision of your website, we have the team that will develop it.",
+    "keywords": [
+      "web development",
+      "custom websites",
+      "e-commerce development",
+      "responsive web design",
+      "website conversion",
+      "GT Connections"
+    ],
+    "type": "website"
+  },
+  "hero": {
+    "eyebrow": "Web Development",
+    "title": "If you have a vision of your website, we have the team that will develop it.",
+    "subtitle": "We focus on giving you the best and beautiful designs, a showcase that allows your customers to know your products and services. The first impression always counts — but above all your website has to work.",
+    "ctas": [
+      {
+        "label": "Start With Us",
+        "href": "/contact-us"
+      }
+    ]
+  },
+  "intro": {
+    "title": "4 complete packages of services",
+    "text": "For all those companies that prefer to manage their design and technological needs in a SINGLE SITE.",
+    "cta": {
+      "label": "Discover More",
+      "href": "/contact-us"
+    }
+  },
+  "cards": {
+    "title": "What we build",
+    "items": [
+      {
+        "title": "Web Development",
+        "text": "We develop functional websites, available online for millions of users. We create solutions that streamline the operations of your online business.",
+        "cta": {
+          "label": "Contact Us",
+          "href": "/contact-us"
+        }
+      },
+      {
+        "title": "E-commerce Creation",
+        "text": "We create the best online store so you can show your products and services, as well as being compatible with all mobile devices.",
+        "cta": {
+          "label": "We Start Your Project",
+          "href": "/contact-us"
+        }
+      },
+      {
+        "title": "Website Content Writing",
+        "text": "If you need convincing and easy-to-use content for your website, you have to contact us.",
+        "cta": {
+          "label": "We Start Your Project",
+          "href": "/contact-us"
+        }
+      }
+    ]
+  },
+  "callout": {
+    "title": "Calculate the cost to create your website easily",
+    "text": "Get an approximate budget for the creation of your website.",
+    "ctas": [
+      {
+        "label": "Calculate Cost",
+        "href": "https://brief.gtconnections.com/web/",
+        "external": true
+      }
+    ]
+  }
+}
