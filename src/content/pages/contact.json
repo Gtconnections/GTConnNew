@@ -2,7 +2,7 @@
   "slug": "contact-us",
   "seo": {
     "title": "Contact | GT Connections",
-    "description": "Contact us and talk with our seller center. Boost your project now.",
+    "description": "Contact GT Connections — talk with our team about web & app development, landing pages, hosting, domains and our reseller program. Boost your project now.",
     "keywords": [
       "contact GT Connections",
       "get a quote",
@@ -12,7 +12,31 @@
   },
   "hero": {
     "eyebrow": "Contact",
-    "title": "Contact us and talk with our seller center",
-    "subtitle": "It's a pleasure to know about you. Let us know how we can help you, boost your project now."
+    "title": "Contact us and talk with our",
+    "titleHighlight": "seller center",
+    "subtitle": "It's a pleasure to know about you. Let us know how we can help you and boost your project now."
+  },
+  "contact": {
+    "title": "Let's talk about your project",
+    "text": "Tell us what you need and our team will get back to you as soon as possible. We're here to help you start your Digital Business.",
+    "hours": "Mon – Fri, 9:00 AM – 6:00 PM (EST)",
+    "emailTo": "info@gtconnections.com",
+    "subjects": [
+      "Web Development",
+      "Mobile App Development",
+      "Landing Pages",
+      "Hosting & Backups",
+      "Domains",
+      "Reseller Program",
+      "Other"
+    ]
+  },
+  "callout": {
+    "title": "Prefer to start right away?",
+    "text": "Fill out our project brief and we'll prepare a tailored proposal for you.",
+    "ctas": [
+      { "label": "Start your brief", "href": "https://brief.gtconnections.com/web/", "external": true },
+      { "label": "Reseller program", "href": "/reseller-program" }
+    ]
   }
 }

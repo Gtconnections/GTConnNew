@@ -9,6 +9,7 @@ import ProductList from "@/components/sections/ProductList";
 import Callout from "@/components/sections/Callout";
 import FeatureRows from "@/components/sections/FeatureRows";
 import Perks from "@/components/sections/Perks";
+import ContactSection from "@/components/sections/ContactSection";
 import LogosMarquee from "@/components/sections/LogosMarquee";
 import ServicesGrid from "@/components/sections/ServicesGrid";
 import Stats from "@/components/sections/Stats";
@@ -44,6 +45,7 @@ export default function PageRenderer({
       {page.intro && <Intro intro={page.intro} />}
       {page.features && <FeatureRows features={page.features} />}
       {page.perks && <Perks perks={page.perks} />}
+      {page.contact && <ContactSection contact={page.contact} site={site} />}
       {page.services && <ServicesGrid services={page.services} />}
       {/* CTA destacado colocado temprano cuando early=true */}
       {page.callout?.early && <Callout callout={page.callout} />}

@@ -136,6 +136,13 @@ export interface PageContent {
     items: { title: string; text: string; icon: string; cta?: Cta }[];
   };
   perks?: { icon?: string; title?: string; text?: string; items?: string[]; ctas?: Cta[] };
+  contact?: {
+    title?: string;
+    text?: string;
+    hours?: string;
+    subjects?: string[];
+    emailTo?: string;
+  };
   logos?: { title?: string; items: string[] };
   services?: { title?: string; subtitle?: string; items: ServiceItem[] };
   stats?: { title?: string; items: StatItem[] };
