@@ -29,26 +29,39 @@
     ]
   },
   "cards": {
+    "eyebrow": "Reseller advantages",
     "title": "Why resell with us",
+    "subtitle": "A program built for maximum margin and sustainable growth — under your own brand.",
+    "variant": "velocity",
     "items": [
       {
+        "icon": "store",
+        "label": "Your own storefront",
         "title": "Branding",
         "text": "Build your online storefront — create a storefront that looks like your business."
       },
       {
+        "icon": "tags",
+        "label": "Full pricing control",
         "title": "Set your own prices",
         "text": "Don't just get a commission; set your own margins and price products your way."
       },
       {
+        "icon": "card",
+        "label": "Payments handled",
         "title": "We handle payments",
         "text": "There's no need to establish your own merchant account."
       },
       {
+        "icon": "support",
+        "label": "Dedicated team",
         "title": "Support",
         "text": "We have a team dedicated exclusively to helping our resellers succeed."
       },
       {
-        "title": "IT professionals, MSPs & VARs welcome",
+        "icon": "server",
+        "label": "Built for pros",
+        "title": "IT professionals, MSPs & VARs",
         "text": "A program aligned with your business model."
       }
     ]

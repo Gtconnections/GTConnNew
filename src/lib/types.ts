@@ -68,6 +68,8 @@ export interface Card {
   title: string;
   text: string;
   cta?: Cta;
+  icon?: string;
+  label?: string;
 }
 
 export interface Step {
@@ -148,7 +150,7 @@ export interface PageContent {
   stats?: { title?: string; items: StatItem[] };
   testimonials?: { title?: string; subtitle?: string; items: TestimonialItem[] };
   faq?: { title?: string; subtitle?: string; items: FaqItem[] };
-  cards?: { title?: string; items: Card[] };
+  cards?: { title?: string; subtitle?: string; eyebrow?: string; variant?: "velocity"; items: Card[] };
   steps?: { title?: string; variant?: "cards"; items: Step[] };
   reasons?: { title?: string; items: string[] };
   pricing?: {

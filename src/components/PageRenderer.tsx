@@ -8,6 +8,7 @@ import Pricing from "@/components/sections/Pricing";
 import ProductList from "@/components/sections/ProductList";
 import Callout from "@/components/sections/Callout";
 import FeatureRows from "@/components/sections/FeatureRows";
+import CardsVelocity from "@/components/sections/CardsVelocity";
 import Perks from "@/components/sections/Perks";
 import ContactSection from "@/components/sections/ContactSection";
 import LogosMarquee from "@/components/sections/LogosMarquee";
@@ -49,7 +50,12 @@ export default function PageRenderer({
       {page.services && <ServicesGrid services={page.services} />}
       {/* CTA destacado colocado temprano cuando early=true */}
       {page.callout?.early && <Callout callout={page.callout} />}
-      {page.cards && <CardsGrid cards={page.cards} />}
+      {page.cards &&
+        (page.cards.variant === "velocity" ? (
+          <CardsVelocity cards={page.cards} />
+        ) : (
+          <CardsGrid cards={page.cards} />
+        ))}
       {page.steps &&
         (page.steps.variant === "cards" ? (
           <ProcessCards steps={page.steps} />
