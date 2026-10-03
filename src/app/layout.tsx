@@ -42,13 +42,8 @@ export async function generateMetadata(): Promise<Metadata> {
       follow: true,
       googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
     },
-    icons: {
-      icon: [
-        { url: "/favicon.ico" },
-        { url: "/icon.png", type: "image/png", sizes: "512x512" },
-      ],
-      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
-    },
+    // El favicon y los iconos los generan automáticamente los archivos
+    // src/app/favicon.ico, src/app/icon.svg y src/app/apple-icon.png (marca GT).
     manifest: "/manifest.webmanifest",
   };
 }
