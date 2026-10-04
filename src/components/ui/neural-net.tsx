@@ -54,7 +54,7 @@ export default function NeuralNet({
     const mouse = { x: -9999, y: -9999 };
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
-    function seed() {
+    const seed = () => {
       const count = Math.max(30, Math.min(110, Math.floor((w * h) / 20000)));
       nodes = Array.from({ length: count }, () => ({
         x: Math.random() * w,
@@ -63,9 +63,9 @@ export default function NeuralNet({
         vy: (Math.random() - 0.5) * 0.35,
         r: 1 + Math.random() * 1.6,
       }));
-    }
+    };
 
-    function resize() {
+    const resize = () => {
       const rect = canvas.getBoundingClientRect();
       w = Math.max(1, rect.width);
       h = Math.max(1, rect.height);
@@ -73,9 +73,9 @@ export default function NeuralNet({
       canvas.height = Math.floor(h * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       seed();
-    }
+    };
 
-    function step() {
+    const step = () => {
       if (!running) return;
       const BLUE = TONES[toneRef.current];
       ctx.clearRect(0, 0, w, h);
@@ -129,7 +129,7 @@ export default function NeuralNet({
       }
 
       raf = requestAnimationFrame(step);
-    }
+    };
 
     const onMove = (e: PointerEvent) => {
       const rect = canvas.getBoundingClientRect();
