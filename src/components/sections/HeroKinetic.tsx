@@ -5,6 +5,7 @@ import type { CSSProperties } from "react";
 import SmartLink from "@/components/SmartLink";
 import DomainSearch from "@/components/DomainSearch";
 import KineticGrid from "@/components/ui/kinetic-grid";
+import NeuralNet from "@/components/ui/neural-net";
 import LogoMark from "@/components/ui/logo-mark";
 import type { PageContent, SiteConfig } from "@/lib/types";
 
@@ -71,6 +72,9 @@ export default function HeroKinetic({
       theme="light"
       className="min-h-[100svh] bg-gradient-to-b from-brand-100 via-brand-50 to-white"
     >
+      {/* Red neuronal sutil sobre el fondo (azul de marca, mismos colores) */}
+      <NeuralNet className="absolute inset-0 z-0 h-full w-full opacity-80" />
+
       {/* Icono de marca gigante girando de fondo (siempre en movimiento) */}
       <div
         aria-hidden
