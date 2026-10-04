@@ -3,8 +3,8 @@
 import { useEffect, useRef } from "react";
 
 /*
-  NeuralNet — red neuronal sutil como capa de fondo del hero (tema claro).
-  - Nodos flotantes en azul de marca rgb(29,102,241) con conexiones por proximidad.
+  NeuralNet — red neuronal como marca de agua sutil en el hero (tema claro).
+  - Nodos flotantes con conexiones por proximidad, en azul de marca o gris pizarra.
   - Reacciona al puntero: los nodos cercanos se iluminan y se conectan al cursor.
   - Respeta prefers-reduced-motion y se pausa cuando sale de pantalla.
   - Sin dependencias; canvas acotado a su contenedor.
@@ -18,12 +18,26 @@ interface NNode {
   r: number;
 }
 
-const BLUE = "29,102,241"; // brand-600, mismos colores del sitio
-const LINK_DIST = 150;
-const MOUSE_DIST = 190;
+type Tone = "blue" | "gray";
 
-export default function NeuralNet({ className = "" }: { className?: string }) {
+const TONES: Record<Tone, string> = {
+  blue: "29,102,241", // brand-600, mismos colores del sitio
+  gray: "100,116,139", // pizarra, marca de agua neutra
+};
+
+const LINK_DIST = 160;
+const MOUSE_DIST = 200;
+
+export default function NeuralNet({
+  className = "",
+  tone = "blue",
+}: {
+  className?: string;
+  tone?: Tone;
+}) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const toneRef = useRef<Tone>(tone);
+  toneRef.current = tone;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -41,13 +55,13 @@ export default function NeuralNet({ className = "" }: { className?: string }) {
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
     function seed() {
-      const count = Math.max(28, Math.min(95, Math.floor((w * h) / 24000)));
+      const count = Math.max(30, Math.min(110, Math.floor((w * h) / 20000)));
       nodes = Array.from({ length: count }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
-        vx: (Math.random() - 0.5) * 0.4,
-        vy: (Math.random() - 0.5) * 0.4,
-        r: 1.1 + Math.random() * 1.7,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35,
+        r: 1 + Math.random() * 1.6,
       }));
     }
 
@@ -63,6 +77,7 @@ export default function NeuralNet({ className = "" }: { className?: string }) {
 
     function step() {
       if (!running) return;
+      const BLUE = TONES[toneRef.current];
       ctx.clearRect(0, 0, w, h);
 
       for (const n of nodes) {
@@ -76,12 +91,12 @@ export default function NeuralNet({ className = "" }: { className?: string }) {
 
       for (let i = 0; i < nodes.length; i++) {
         const a = nodes[i];
-        // Conexiones nodo-nodo por proximidad
+        // Conexiones nodo-nodo por proximidad (marca de agua: alfa bajo)
         for (let j = i + 1; j < nodes.length; j++) {
           const b = nodes[j];
           const dist = Math.hypot(a.x - b.x, a.y - b.y);
           if (dist < LINK_DIST) {
-            const alpha = (1 - dist / LINK_DIST) * 0.26;
+            const alpha = (1 - dist / LINK_DIST) * 0.16;
             ctx.strokeStyle = `rgba(${BLUE},${alpha.toFixed(3)})`;
             ctx.lineWidth = 1;
             ctx.beginPath();
@@ -93,9 +108,9 @@ export default function NeuralNet({ className = "" }: { className?: string }) {
         // Conexión al cursor
         const mdist = Math.hypot(a.x - mouse.x, a.y - mouse.y);
         if (mdist < MOUSE_DIST) {
-          const alpha = (1 - mdist / MOUSE_DIST) * 0.45;
+          const alpha = (1 - mdist / MOUSE_DIST) * 0.35;
           ctx.strokeStyle = `rgba(${BLUE},${alpha.toFixed(3)})`;
-          ctx.lineWidth = 1.2;
+          ctx.lineWidth = 1.1;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(mouse.x, mouse.y);
@@ -107,9 +122,9 @@ export default function NeuralNet({ className = "" }: { className?: string }) {
       for (const n of nodes) {
         const mdist = Math.hypot(n.x - mouse.x, n.y - mouse.y);
         const hot = mdist < MOUSE_DIST ? 1 - mdist / MOUSE_DIST : 0;
-        ctx.fillStyle = `rgba(${BLUE},${(0.2 + hot * 0.6).toFixed(3)})`;
+        ctx.fillStyle = `rgba(${BLUE},${(0.14 + hot * 0.5).toFixed(3)})`;
         ctx.beginPath();
-        ctx.arc(n.x, n.y, n.r + hot * 1.4, 0, Math.PI * 2);
+        ctx.arc(n.x, n.y, n.r + hot * 1.3, 0, Math.PI * 2);
         ctx.fill();
       }
 
